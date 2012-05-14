@@ -1,4 +1,4 @@
-<!--- Impact Edit / Add Form --->
+ <!--- Impact Edit / Add Form --->
 
 <!--- We need an impact object, and the list of 
 departments to use in the hasMany Checkboxes--->

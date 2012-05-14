@@ -1,4 +1,4 @@
-<cfcomponent extends="Controller">
+ <cfcomponent extends="Controller">
  <cffunction name="init"> 
   <cfscript>
    // I tend to use filters to prevent having to do model("department").findAll() calls all the time

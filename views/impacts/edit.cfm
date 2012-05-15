@@ -10,10 +10,10 @@ departments to use in the hasMany Checkboxes--->
 	<h1>Edit Impact</h1> 
 	<!--- I prefer to post to /impacts/update/[key], 
 	rather than having to remember a hidden form field --->
-	#startFormTag(action="update", route='admin', controller='Impacts', key=impact.id)#
+	#startFormTag(action="update",  controller='Impacts', key=impact.id)#
 <cfelse>
 	<h1>Add New Impact</h1>
-	#startFormTag(action="create", route='admin', controller='Impacts')#
+	#startFormTag(action="create",  controller='Impacts')#
 </cfif>
 
 <!--- Model error msg output--->
@@ -41,6 +41,7 @@ departments to use in the hasMany Checkboxes--->
 	</label>
 	
 	note the impactid being passed in to complete the composite ID.	
+	The order of the composite keys in the database MUST reflect the order in the hasManycheckbox tag!
 
 --->
 <cfloop query="departments">  
